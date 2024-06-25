@@ -1,0 +1,26 @@
+In this services, we will learn how to:
+
+1. Azure virtual network features and components.
+2. Features and usage cases for subnets and subnetting.
+3. Identify usage cases for private and public IP addresses.
+4. How Create a virtual network and assign IP address. (LAB)
+
+
+
+Azure Virtual Network: It is a service offered by Azure to create an isolated environment for networking within the Azure cloud. This service allows secure communication between Azure resources and on-premises networks.
+
+Subnets : A subnet in a virtual network is a segment within an Azure Virtual Network (VNet) that allows you to organize and isolate resources. Subnets enable you to divide the VNet into smaller, more manageable sections, each with its own range of IP addresses. This segmentation enhances network security and performance by allowing you to control traffic flow and apply network security policies at a more granular level.
+
+In any subnet, the first four IP addresses and the last IP address are reserved and cannot be assigned to Azure resources:
+
+First IP address: Network address
+Second IP address: Default gateway
+Third and fourth IP addresses: Reserved for future use
+Last IP address: Broadcast address
+
+Key points while creating virtual networks
+
+1. Plan to use that CIDR address that is not use
+2. Once you create the IP Address space, it can't be changed
+3. IP address of each subnet within VNet must be unique and It can't be overlapped with other subnet with in the same vpc.
+
